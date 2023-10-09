@@ -1,0 +1,108 @@
+* {
+    font-family: Inter;
+
+}
+
+body {
+    background-color: yellowgreen;
+}
+
+.DebuggerArea {
+    position: absolute;
+    width: 35%;
+    height: 55%;
+    right: 0;
+    top: 16%;
+    background: #F3F3F3;
+}
+
+.BlockSettings {
+    width: 35%;
+    height: 37%;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    background: #515151;
+}
+
+.Bar {
+    width: 65%;
+    height: 8%;
+    left: 0px;
+    top: 8%;
+    position: absolute;
+    background: linear-gradient(90deg, #330557 0%, #27639B 100%);
+}
+
+.TopTitle {
+    width: 15%;
+    height: 7%;
+    left: 2.5%;
+    top: 9.5%;
+    position: absolute;
+    background: #2F2F2F;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.CodingArea {
+    width: 65%;
+    height: 84%;
+    left: 0px;
+    bottom: 0;
+    position: absolute;
+    background: #2F2F2F;
+}
+
+.Rectangle5 {
+    width: 2.5%;
+    height: 84%;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    background: #515151;
+}
+
+.AddNewBlockButton {
+    width: 15%;
+    height: 10%;
+    bottom: 2%;
+    right: 36%;
+    position: absolute;
+    background: #27639B;
+    border-radius: 16px;
+}
+
+.NovoObjeto {
+    left: 5%;
+    top: 25%;
+    position: absolute;
+    color: white;
+    font-size: 125%;
+    left: 30%;
+    top: 10%;
+}
+
+.PlusIcon {
+    width: 10%;
+    right: 80%;
+    bottom: 35%;
+    position: absolute;
+}
+
+.BlocosDeCodigo {
+    font-size: 100%;
+    left: 4.5%;
+    top: 12%;
+    position: absolute;
+    color: white;
+}
+
+.RunStop {
+    width: 35%;
+    height: 8%;
+    position: absolute;
+    background: #111111;
+    right: 0;
+    top: 8%;
+}
