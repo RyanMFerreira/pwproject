@@ -1,6 +1,20 @@
+:root {
+    --most-darkest-color: #111111;
+    --darkest-color: #1E1E1E;
+    --gray-color: #2F2F2F;
+    --light-gray-color: #515151;
+    --accent-color: #db5621;
+    --contrast-color: #330557;
+    --white-color: #F3F3F3;
+}
+
 * {
-    font-family: Inter;
-    color: white;
+    font-family: cursive;
+    color: var(--white-color);
+    font-size: 100%;
+    transition: 0.5s;
+    animation: forwards;
+
 }
 
 .TopBar {
@@ -9,21 +23,14 @@
     left: 0px;
     top: 0px;
     position: absolute;
-    background-color: #1E1E1E;
+    background-color: var(--darkest-color);
 }
 
-.Icon {
+.MenuIcon {
     width: 15%;
     left: 1%;
     top: 20%;
     position: absolute
-}
-
-.Documentacao {
-    right: 5%;
-    top: 20%;
-    position: absolute;
-    font-size: 24px;
 }
 
 .ProfileIcon {
@@ -38,14 +45,60 @@
 }
 
 .Link:hover {
-    color: #27639B;
+    color: var(--accent-color);
+    filter: brightness(65%);
 }
 
 button:hover {
-    filter: brightness(75%);
+    filter: brightness(65%);
+}
+
+input {
+    border: none;
 }
 
 button {
     border: none;
     background: none;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.TopMenu {
+    height: 33%;
+    width: 0;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    background-color: var(--most-darkest-color);
+    overflow: hidden;
+    padding-top: 2.5%;
+    border-radius: 0px 10px 10px 10px;
+}
+
+.TopMenu ul {
+    margin-top: 5%;
+    padding: 10px;
+    list-style: none;
+}
+
+.TopMenu ul li {
+    margin: auto;
+    text-align: center;
+    width: 80%;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    background: #2F2F2F;
+}
+
+.TopMenu a {
+    text-decoration: none;
+}
+
+.TopMenu li:hover {
+    background-color: var(--accent-color);
 }

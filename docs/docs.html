@@ -2,6 +2,7 @@
 <html lang="pt-br">
 
 <head>
+    <script src="../script.js"></script>
     <link rel="stylesheet" href="../global.css">
     <link rel="stylesheet" href="docs.css">
     <meta charset="UTF-8">
@@ -11,8 +12,22 @@
 
 <body>
     <div class="TopBar">
-        <button class="Icon"><img class="Icon" src="../icons/Icon.svg" alt=""></button>
-        <button class="ProfileIcon"><img class="ProfileIcon" src="../icons/ProfileIcon.svg" alt=""></button>
+        <div class="TopMenu">
+            <div class="close-btn" onclick="toggleMenu()">×</div>
+            <ul>
+                <a href="../index.html">
+                    <li>Página Inicial</li>
+                </a>
+                <a href="#">
+                    <li>Sobre</li>
+                </a>
+                <a href="../docs/docs.html">
+                    <li>Documentação</li>
+                </a>
+            </ul>
+        </div>
+
+        <div class="MenuIcon" onclick="toggleMenu()"><img class="MenuIcon" src="../icons/Icon.svg" alt=""></div>
     </div>
 
     <div class="Footer">
