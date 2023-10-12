@@ -14,7 +14,6 @@ button {
     bottom: 0px;
     position: absolute;
     background: var(--most-darkest-color);
-    border-top: 2px black solid;
 }
 
 .Creditos {

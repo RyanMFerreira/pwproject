@@ -1,20 +1,23 @@
 :root {
     --most-darkest-color: #111111;
-    --darkest-color: #1E1E1E;
+    --darkest-color: #181717;
     --gray-color: #2F2F2F;
     --light-gray-color: #515151;
     --accent-color: #db5621;
-    --contrast-color: #330557;
+    --contrast-color: #5900f0ff;
     --white-color: #F3F3F3;
 }
 
-* {
-    font-family: cursive;
-    color: var(--white-color);
-    font-size: 100%;
-    transition: 0.5s;
-    animation: forwards;
+@font-face {
+    font-family: 'Ubuntu';
+    src: url(UbuntuFont/Ubuntu-Regular.ttf) format('truetype');
+}
 
+* {
+    font-size: 100%;
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--white-color);
+    transition: 0.2s;
 }
 
 .TopBar {
@@ -64,17 +67,18 @@ button {
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
 }
 
 .TopMenu {
-    height: 33%;
+    height: 35%;
     width: 0;
     position: fixed;
     top: 0%;
     left: 0%;
     background-color: var(--most-darkest-color);
-    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+
     padding-top: 2.5%;
     border-radius: 0px 10px 10px 10px;
 }
@@ -86,7 +90,7 @@ body {
 }
 
 .TopMenu ul li {
-    margin: auto;
+    margin: 0 auto;
     text-align: center;
     width: 80%;
     padding: 15px;
@@ -101,4 +105,27 @@ body {
 
 .TopMenu li:hover {
     background-color: var(--accent-color);
+}
+
+.TopMenu::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+    padding: 50px;
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: var(--accent-color);
+}
+
+::-webkit-scrollbar-track {
+    background: var(--most-darkest-color);
+}
+
+::-webkit-scrollbar-corner {
+    background: var(--most-darkest-color);
 }

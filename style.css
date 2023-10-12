@@ -1,4 +1,4 @@
-body{
+body {
     overflow: hidden;
 }
 
@@ -20,13 +20,6 @@ body{
     background: var(--darkest-color);
 }
 
-.Creditos {
-    left: 1%;
-    bottom: -25%;
-    position: absolute;
-    font-size: 14px;
-}
-
 .NewProjectButton {
     width: 90%;
     height: 15%;
@@ -35,15 +28,10 @@ body{
     position: absolute;
     border-radius: 24px;
     background: var(--accent-color);
+    text-align: center;
+    font-size: large;
 }
 
-.NovoProjeto {
-    text-align: center;
-    width: 50%;
-    position: relative;
-    font-size: x-large;
-    left: 25%;
-}
 
 .PlusButton {
     width: 10%;
