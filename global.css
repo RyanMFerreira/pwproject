@@ -6,6 +6,8 @@
     --accent-color: #db5621;
     --contrast-color: #5900f0ff;
     --white-color: #F3F3F3;
+    --transparent-color: rgba(20, 20, 20, 0.527);
+    --accent-color-variant: #aa3e14;
 }
 
 @font-face {
@@ -63,6 +65,7 @@ input {
 button {
     border: none;
     background: none;
+    box-shadow: 3px 3px 3px var(--transparent-color);
 }
 
 body {
@@ -78,7 +81,6 @@ body {
     background-color: var(--most-darkest-color);
     overflow-y: auto;
     overflow-x: hidden;
-
     padding-top: 2.5%;
     border-radius: 0px 10px 10px 10px;
 }
@@ -118,8 +120,9 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    border-radius: 10px;
+    border-radius: 20px;
     background: var(--accent-color);
+    border: 2px solid var(--accent-color-variant);
 }
 
 ::-webkit-scrollbar-track {
