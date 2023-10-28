@@ -60,7 +60,7 @@ body {
     overflow: auto;
 }
 
-.Rectangle5 {
+.Rectangle {
     width: 2.5%;
     height: 84%;
     left: 0;
@@ -69,7 +69,7 @@ body {
     background: var(--light-gray-color);
 }
 
-.AddNewBlockButton {
+.AddNewObjectButton {
     width: 15%;
     height: 10%;
     bottom: 5%;
@@ -146,7 +146,7 @@ input::placeholder {
     margin: auto;
 }
 
-.NovoObjeto {
+.NewObject {
     margin-right: 10%;
     box-shadow: 3px 3px 3px var(--transparent-color);
     text-align: center;
@@ -182,3 +182,4 @@ input::placeholder {
 .NovoBloco:hover {
     box-shadow: none;
 }
+

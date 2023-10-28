@@ -13,32 +13,33 @@ function ToggleMapConfigMenu() {
 
 function AdicionarNovoObjeto() {
     console.log("Adicionar Novo Objeto");
-    var NovoObjeto = document.createElement("Div");
-    NovoObjeto.className = "NovoObjeto";
+    var NewObject = document.createElement("Div");
+    NewObject.className = "NewObject";
 
-    var NumeroObjeto = document.querySelectorAll('.NovoObjeto').length;
-    NovoObjeto.textContent = "Objeto " + NumeroObjeto;
+    var NumeroObjeto = document.querySelectorAll('.NewObject').length;
+    NewObject.textContent = "Objeto " + NumeroObjeto;
 
-    var ObjetosExistentes = document.querySelectorAll('.NovoObjeto');
+    var ObjetosExistentes = document.querySelectorAll('.NewObject');
     if (ObjetosExistentes.length > 0) {
         var UltimoObjeto = ObjetosExistentes[ObjetosExistentes.length - 1];
-        NovoObjeto.style.left = (UltimoObjeto.offsetLeft + UltimoObjeto.offsetWidth + 64) + "px";
+        NewObject.style.left = (UltimoObjeto.offsetLeft + UltimoObjeto.offsetWidth + 64) + "px";
     } else {
-        NovoObjeto.style.left = "2%";
+        NewObject.style.left = "2%";
     }
 
     var BotaoAdicionarBloco = document.createElement("button");
     BotaoAdicionarBloco.textContent = "Adicionar Bloco";
     BotaoAdicionarBloco.className = "AdicionarBlocoButton";
     BotaoAdicionarBloco.onclick = function () {
-        AdicionarBloco(NovoObjeto);
+        AdicionarBloco(NewObject);
     };
-    NovoObjeto.appendChild(BotaoAdicionarBloco);
+    NewObject.appendChild(BotaoAdicionarBloco);
 
-    document.querySelector('.CodingArea').appendChild(NovoObjeto);
+    document.querySelector('.CodingArea').appendChild(NewObject);
 }
 
 function AdicionarBloco(objeto) {
+
     console.log("Adicionar Novo Bloco");
     var NovoBloco = document.createElement("button");
     NovoBloco.className = "NovoBloco";
